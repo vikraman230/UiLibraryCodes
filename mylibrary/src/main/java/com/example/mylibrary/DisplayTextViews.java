@@ -24,10 +24,10 @@ public class DisplayTextViews extends LinearLayout {
     private String labelFontSize;
     private String valueFontSize;
 
-    private DisplayTextViews(Context context){
+    public DisplayTextViews(Context context){
         super(context);
     }
-    private DisplayTextViews(Context context, AttributeSet attrs){
+    public DisplayTextViews(Context context, AttributeSet attrs){
         super(context,attrs);
         typedArray=context.obtainStyledAttributes(attrs,R.styleable.Control);
 
@@ -54,15 +54,15 @@ public class DisplayTextViews extends LinearLayout {
 
     }
 
-    private void setValueText(String value) {
+    public void setValueText(String value) {
         this.tvValueText.setText(value);
     }
 
-    private void setLabelText(String label) {
+    public void setLabelText(String label) {
         this.tvLabelText.setText(label);
     }
 
-    private void setLayoutOrientation(String orientation) {
+    public void setLayoutOrientation(String orientation) {
 
     }
 }

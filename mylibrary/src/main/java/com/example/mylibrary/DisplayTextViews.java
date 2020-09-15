@@ -46,7 +46,7 @@ public class DisplayTextViews extends LinearLayout {
         containerLayout=(LinearLayout) layoutInflater.inflate(R.layout.layout,this,true);
 
         this.tvLabelText=(TextView) containerLayout.findViewById(R.id.tv_label);
-        this.tvValueText=(TextView) containerLayout.findViewById(R.id.tv_label);
+        this.tvValueText=(TextView) containerLayout.findViewById(R.id.tv_value);
         this.lltOrientationLayOut=(LinearLayout) containerLayout.findViewById(R.id.llt_containerlayout);
         setLayoutOrientation(orientation);
         setLabelText(label);

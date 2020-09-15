@@ -63,6 +63,21 @@ public class DisplayTextViews extends LinearLayout {
     }
 
     public void setLayoutOrientation(String orientation) {
+        if(orientation!=null){
+            if(orientation.equals("1")){
+                lltOrientationLayOut.setOrientation(HORIZONTAL);
+                int i=lltOrientationLayOut.getChildCount();
+                if(i>0){
+                    TextView textView=(TextView) lltOrientationLayOut.getChildAt(1);
+                    LinearLayout.LayoutParams params=new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                    params.setMargins(15,0,0,0);
+                    textView.setLayoutParams(params);
+                }
+            }
+            else {
+                lltOrientationLayOut.setOrientation(VERTICAL);
+            }
+        }
 
     }
 }
